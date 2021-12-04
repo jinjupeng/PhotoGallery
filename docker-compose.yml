@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  photogallery:
+    image: ${DOCKER_REGISTRY-}photogallery
+    build:
+      context: .
+      dockerfile: PhotoGallery/Dockerfile
